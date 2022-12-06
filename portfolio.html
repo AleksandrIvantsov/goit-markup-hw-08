@@ -21,11 +21,17 @@
 		<!-- Шапка сайту -->
 		<header class="page-header">
 			<!-- Основна навігація -->
-			<div class="container container--pos-relative">
+			<div class="container">
 				<nav class="main-nav">
 					<a href="./index.html" class="logo">
 						<span class="logo__accent">Web</span>Studio
 					</a>
+					<button type="button" class="menu-button" aria-expanded="false" aria-controls="mobile-menu" data-menu-button>
+						<svg width="40" height="40" class="menu-button__icon" aria-label="Перемикач мобільного меню">
+							<use class="menu-button__icon-cross" href="./images/icons.svg#icon-cross"></use>
+							<use class="menu-button__icon-menu" href="./images/icons.svg#icon-menu"></use>
+						</svg>
+					</button>
 					<div class="main-nav__wrapper" id="mobile-menu" data-menu>
 						<ul class="site-nav">
 							<li class="site-nav__item">
@@ -61,12 +67,6 @@
 							<li class="social__item"><a href="" class="social__link">LinkedIn</a></li>
 						</ul>
 					</div>
-					<button type="button" class="menu-button" aria-expanded="false" aria-controls="mobile-menu" data-menu-button>
-						<svg width="40" height="40" class="menu-button__icon" aria-label="Перемикач мобільного меню">
-							<use class="menu-button__icon-cross" href="./images/icons.svg#icon-cross"></use>
-							<use class="menu-button__icon-menu" href="./images/icons.svg#icon-menu"></use>
-						</svg>
-					</button>
 				</nav>
 			</div>
 		</header>

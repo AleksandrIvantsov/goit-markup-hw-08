@@ -55,10 +55,6 @@ img {
 	margin: 0 auto;
 	padding: 0 15px;
 
-	&--pos-relative {
-		position: relative;
-	}
-
 	@media screen and (min-width: $mobile) {
 		width: $mobile;
 	}

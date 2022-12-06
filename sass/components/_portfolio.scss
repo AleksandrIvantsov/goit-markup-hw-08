@@ -4,6 +4,10 @@
 	display: flex;
 	flex-wrap: wrap;
 	margin-bottom: 40px;
+
+	@media screen and (min-width: $tablet) {
+		justify-content: center;
+	}
 }
 
 .filters__item:not(:last-child) {
@@ -48,7 +52,7 @@
 }
 
 .product__wrapper {
-	padding: 20px 24px;
+	padding: 20px 18px;
 
 	border: 1px solid $secondary-border-color;
 	border-top: none;

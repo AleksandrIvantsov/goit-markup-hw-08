@@ -1,0 +1,59 @@
+/* Наша команда */
+
+.team-member {
+	@media screen and (min-width: $tablet) {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -15px;
+	}
+}
+
+.team-member__item {
+	background-color: $primary-bg-color;
+	border-radius: 0 0 4px 4px;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+	&:not(:last-child) {
+		@media screen and (max-width: ($tablet - 1px)) {
+			margin-bottom: 30px;
+		}
+	}
+	@media screen and (min-width: $tablet) {
+		width: calc((100% - 4 * 15px) / 2);
+		margin: 15px;
+	}
+	@media screen and (min-width: $desktop) {
+		width: calc((100% - 8 * 15px) / 4);
+		margin: 15px;
+	}
+}
+
+.team-member__foto {
+	display: block;
+}
+
+.team-member__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 30px 24px;
+}
+
+.team-member__name {
+	margin-bottom: 10px;
+
+	color: $title-text-color;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.2;
+	text-align: center;
+}
+
+.team-member__pos {
+	margin-bottom: 16px;
+
+	font-size: 16px;
+	line-height: 1.2;
+	text-align: center;
+}
